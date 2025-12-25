@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Dock from "../Components/Dock"
 import Particles from "../Components/Ui/Particles"
 import { Home, User, Code, Phone, FileText, Rocket } from "lucide-react";
