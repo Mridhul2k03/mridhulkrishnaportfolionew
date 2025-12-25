@@ -1,4 +1,5 @@
-import { useState, ReactElement } from 'react';
+import { useState } from 'react';
+import type { ReactElement } from 'react'; // Add type-only import
 import { Code2, Palette, Rocket, Award, Heart, Mail, Terminal } from 'lucide-react';
 import ResumeModal from "@/Components/Ui/ResumeModal";
 
