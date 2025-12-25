@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Code2, Palette, Rocket, Award, Coffee, Heart, Download, Mail, Terminal } from 'lucide-react';
+import ResumeModal from "@/Components/Ui/ResumeModal"; // Add this import
 
 interface Skill {
   name: string;
@@ -14,6 +15,8 @@ interface Stat {
 }
 
 function About() {
+
+  const [isResumeModalOpen, setIsResumeModalOpen] = useState(false); // Add state
   const skills: Skill[] = [
     { name: "Python", src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkBKGzgKHQA42GTo40DCQUnNVkUWd3FMzFJA&s', color: "from-blue-500 to-cyan-500" },
     { name: "Django", src: 'https://i0.wp.com/www.opengis.ch/wp-content/uploads/2020/04/django-python-logo.png?fit=500%2C500&ssl=1', color: "from-green-900 to-green-800" },
@@ -150,8 +153,9 @@ function About() {
                 Get In Touch
                 <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
               </button>
-              <button className="flex items-center gap-3 px-7 py-4 bg-white/80 backdrop-blur-sm text-gray-900 font-semibold rounded-xl border-2 border-gray-300 hover:border-cyan-500 hover:shadow-md transition-all duration-300 group">
-                <Download size={20} />
+              <button className="flex items-center gap-3 px-7 py-4 bg-white/80 backdrop-blur-sm text-gray-900 font-semibold rounded-xl border-2 border-gray-300 hover:border-cyan-500 hover:shadow-md transition-all duration-300 group" 
+              onClick={() => setIsResumeModalOpen(true)}
+              >
                 Download CV
               </button>
             </div>
@@ -191,6 +195,10 @@ function About() {
           </div>
         </div>
       </div>
+      <ResumeModal 
+        isOpen={isResumeModalOpen} 
+        onClose={() => setIsResumeModalOpen(false)} 
+      />
     </div>
   );
 }
