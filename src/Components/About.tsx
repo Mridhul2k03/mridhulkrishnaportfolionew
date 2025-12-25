@@ -37,7 +37,7 @@ function About() {
   ];
 
   return (
-    <div className="min-h-screen py-20 px-4 bg-white relative overflow-hidden">
+    <div className="min-h-screen py-20 px-4 bg-white relative overflow-hidden" id='about'>
       {/* Background Effects - Matching Projects component */}
       <div className="absolute inset-0 bg-gradient-to-b from-white via-gray-50 to-white"></div>
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-100/30 rounded-full blur-3xl"></div>

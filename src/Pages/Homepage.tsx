@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Dock from "../Components/Dock"
 import Particles from "../Components/Ui/Particles"
-import { Home, User, Code, Phone, FileText, Rocket } from "lucide-react";
+import { Home, User, Code, Phone, FileText } from "lucide-react";
 import SplitText from "../Components/Ui/SplitText";
 import About from "../Components/About";
 import Projects from "@/Components/Projects";
@@ -30,12 +30,12 @@ function Homepage() {
       onClick: () => window.scrollTo({ top: document.getElementById('projects')?.offsetTop || 0, behavior: 'smooth' }),
       className: "bg-yellow-100 dark:bg-yellow-900"
     },
-    {
-      icon: <Rocket size={18} />,
-      label: "Skills",
-      onClick: () => window.scrollTo({ top: document.getElementById('skills')?.offsetTop || 0, behavior: 'smooth' }),
-      className: "bg-purple-100 dark:bg-purple-900"
-    },
+    // {
+    //   icon: <Rocket size={18} />,
+    //   label: "Skills",
+    //   onClick: () => window.scrollTo({ top: document.getElementById('skills')?.offsetTop || 0, behavior: 'smooth' }),
+    //   className: "bg-purple-100 dark:bg-purple-900"
+    // },
     {
       icon: <Phone size={18} />,
       label: "Contact",
