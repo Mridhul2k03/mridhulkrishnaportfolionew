@@ -24,7 +24,7 @@ function About() {
     { name: "MySQL", src: 'https://pngimg.com/d/mysql_PNG9.png', color: "from-blue-500 to-orange-500" },
     { name: "PostgreSQL", src: '/postgresql.png', color: "from-white to-blue-500" },
     { name: "React js", src: '/react.png', color: "from-green-500 to-emerald-500" },
-    { name: "Tailwind CSS", src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcoZsMBFkU9ArhUL_HlgeESChICNA1cZcIZg&s', color: "from-white to-white" },
+    { name: "Tailwind CSS", src: '/tailwindcss.png', color: "from-white to-white" },
     { name: "AWS", src: '/aws.png', color: "from-white to-white" },
     { name: "Git", src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png', color: "from-white to-white" }
   ];
