@@ -19,13 +19,13 @@ function About() {
   const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
 
   const skills: Skill[] = [
-    { name: "Python", src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkBKGzgKHQA42GTo40DCQUnNVkUWd3FMzFJA&s', color: "from-blue-500 to-cyan-500" },
-    { name: "Django", src: 'https://i0.wp.com/www.opengis.ch/wp-content/uploads/2020/04/django-python-logo.png?fit=500%2C500&ssl=1', color: "from-green-900 to-green-800" },
+    { name: "Python", src: '/python.png', color: "from-blue-500 to-cyan-500" },
+    { name: "Django", src: '/django.png', color: "from-green-900 to-green-800" },
     { name: "MySQL", src: 'https://pngimg.com/d/mysql_PNG9.png', color: "from-blue-500 to-orange-500" },
-    { name: "PostgreSQL", src: 'https://p7.hiclipart.com/preview/707/928/892/postgresql-logo-database-management-system-vector-graphics-sql-logo-thumbnail.jpg', color: "from-white to-blue-500" },
-    { name: "React js", src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzZsmpHvJVwm9bEAj-SfiRHFcgXRnFyzwpwQ&s', color: "from-green-500 to-emerald-500" },
+    { name: "PostgreSQL", src: '/postgresql.png', color: "from-white to-blue-500" },
+    { name: "React js", src: '/react.png', color: "from-green-500 to-emerald-500" },
     { name: "Tailwind CSS", src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcoZsMBFkU9ArhUL_HlgeESChICNA1cZcIZg&s', color: "from-white to-white" },
-    { name: "AWS", src: 'https://icon2.cleanpng.com/20180817/vog/8968d0640f2c4053333ce7334314ef83.webp', color: "from-white to-white" },
+    { name: "AWS", src: '/aws.png', color: "from-white to-white" },
     { name: "Git", src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png', color: "from-white to-white" }
   ];
 
