@@ -7,6 +7,7 @@ import About from "../Components/About";
 import Projects from "@/Components/Projects";
 import Contact from "@/Components/Contact";
 import ResumeModal from "@/Components/Ui/ResumeModal"; // Add this import
+import Snowfall from 'react-snowfall'
 
 function Homepage() {
   const [isResumeModalOpen, setIsResumeModalOpen] = useState(false); // Add state
@@ -52,10 +53,11 @@ function Homepage() {
 
   return (
     <>
+    <Snowfall color='#82C3D9' />
       <div style={{ width: '100%', height: '100vh', position: 'relative' }}>
         <Particles
           particleColors={['#ffffff', '#ffffff']}
-          particleCount={500}
+          particleCount={50}
           particleSpread={10}
           speed={0.1}
           particleBaseSize={100}
